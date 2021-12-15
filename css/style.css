@@ -52,17 +52,32 @@ p {
  font-size: 1.8rem;
  margin-bottom: 2rem;
 }
+.para {
+ color: #444;
+ font-size: 1.6rem;
+}
 
 /* h3 */
 h3 {
  font-size: 3rem;
  letter-spacing: 0.1rem;
  text-transform: capitalize;
- margin-bottom: 2rem;
- /* font-weight: 600; */
+ margin-bottom: 1rem;
  color: #181818;
+ padding-top: 5rem;
+ font-weight: 500;
 }
 
+h5 {
+ font-size: 1.8rem;
+ color: #444;
+ margin-bottom: 1rem;
+ font-weight: 600;
+}
+
+.h5-bottom {
+ margin-bottom: 4rem;
+}
 /* btn-style */
 .btn-style {
  background-color: #cc0000;
@@ -75,7 +90,19 @@ h3 {
 }
 
 .btn-style:hover {
- background-color: #ff0000;
+ background-color: transparent;
+ color: #ff0000;
+ border: 1px solid #ff0000;
+}
+
+/* rating star common */
+.star-icon {
+ font-size: 1.4rem;
+ margin-bottom: 1rem;
+}
+
+.checked {
+ color: orangered;
 }
 
 /********** Utility End **********/
@@ -181,8 +208,22 @@ h3 {
 /********** Header End **********/
 /**********************************/
 
-/********** Section 1 start **********/
-/*************************************/
+/********** Section 1 category start **********/
+/*********************************************/
+.sec1 {
+ width: 100%;
+ text-align: center;
+ padding-top: 5rem;
+}
+.sec1 .hr {
+ display: block;
+ width: 12%;
+ margin: auto;
+ display: block;
+ height: 0.4rem;
+ background-color: red;
+}
+
 .category {
  display: flex;
  justify-content: space-between;
@@ -193,8 +234,132 @@ h3 {
 }
 .category-common img {
  width: 100%;
+ opacity: 1;
 }
 /********** Section 1 End **********/
+/*************************************/
+
+/********** Section 2 Best Seller Start **********/
+/************************************************/
+.sec2 {
+ text-align: center;
+ background-color: #f0f0f0;
+}
+
+.sec2 .hr {
+ display: block;
+ width: 5%;
+ margin: auto;
+ display: block;
+ height: 0.4rem;
+ background-color: red;
+}
+
+.popular {
+ display: flex;
+ justify-content: space-between;
+ text-align: left;
+}
+
+.popular-common {
+ width: 24%;
+}
+
+.popular-common img {
+ width: 100%;
+}
+
+/********** Section 2 End **********/
+/*************************************/
+
+/********** Section 3 Start **********/
+/*************************************/
+.sec3 {
+ text-align: center;
+ /* background-color: #f0f0f0; */
+}
+
+.sec3 .hr {
+ display: block;
+ width: 12%;
+ margin: auto;
+ display: block;
+ height: 0.4rem;
+ background-color: red;
+}
+
+.latest {
+ display: flex;
+ justify-content: space-between;
+ text-align: left;
+ flex-flow: row wrap;
+}
+
+.latest-common {
+ width: 24%;
+}
+
+.latest-common img {
+ width: 100%;
+}
+
+/********** Section 3 End **********/
+/*************************************/
+
+/********** Section 4 Start **********/
+/*************************************/
+.sec4 {
+ width: 100%;
+ background-image: linear-gradient(to right, #dd5e89, #f7bb97);
+ text-align: center;
+}
+.sec4 .hr {
+ display: block;
+ width: 20%;
+ margin: 0 auto 2rem;
+ display: block;
+ height: 0.4rem;
+ background-color: #ff0000;
+}
+.deal {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.deal-common {
+ width: 48%;
+}
+.deal-common img {
+ width: 100%;
+}
+
+/* timer */
+#timer {
+ font-size: 3rem;
+ font-weight: 500;
+ color: red;
+ padding: 1rem;
+ margin-bottom: 2rem;
+}
+
+#timer div {
+ display: inline-block;
+ min-width: 8rem;
+ padding: 1rem;
+ background: #fff;
+ border-radius: 1rem;
+ margin: 1.5rem;
+}
+
+#timer div span {
+ color: red;
+ display: block;
+ font-size: 1rem;
+ font-weight: 600;
+}
+/* timer */
+
+/********** Section 4 End **********/
 /*************************************/
 
 /********** Media Query For Mobile Start **********/
@@ -223,7 +388,7 @@ h3 {
   position: fixed;
   top: -100%;
   left: 0;
-  background-color: #e9e9e9;
+  background-color: #f0f0f0;
   flex-direction: column;
   width: 100%;
  }
@@ -243,7 +408,7 @@ h3 {
 
  /* when we click on hamburger */
  .navbar.active {
-  background-color: #e9e9e9;
+  background-color: #f0f0f0;
  }
 
  .nav-menu.active {
