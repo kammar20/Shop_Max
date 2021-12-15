@@ -362,6 +362,71 @@ h5 {
 /********** Section 4 End **********/
 /*************************************/
 
+/********** Section 5 Start **********/
+/*************************************/
+.sec5 {
+ text-align: center;
+ width: 100%;
+}
+.sec5 .hr {
+ display: block;
+ width: 25%;
+ margin: 0 auto 2rem;
+ display: block;
+ height: 0.4rem;
+ background-color: #ff0000;
+}
+.testimony {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ text-align: center;
+}
+.test-common {
+ width: 23%;
+ background-color: #f0f0f0;
+ padding: 2rem;
+ border-radius: 2rem;
+}
+.quote-icon {
+ font-size: 2.5rem;
+ color: orangered;
+ margin-bottom: 2rem;
+}
+.test-common img {
+ border-radius: 50%;
+}
+/********** Section 5 End **********/
+/*************************************/
+
+/********** Section 6 Start**********/
+/*************************************/
+.sec6 {
+ width: 100%;
+ background-color: #d3d3d3;
+ text-align: center;
+}
+.brand {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.brand-common {
+ width: 20%;
+}
+
+.brand-common img {
+ width: 30%;
+ filter: brightness(0%);
+ transition: all 0.2s ease-in-out;
+}
+.brand-common img:hover {
+ filter: brightness(100%);
+}
+/********** Section 6 End**********/
+/*************************************/
+
 /********** Media Query For Mobile Start **********/
 /***********************************************/
 @media only screen and (min-width: 280px) and (max-width: 768px) {
