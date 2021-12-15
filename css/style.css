@@ -52,9 +52,10 @@ p {
  font-size: 1.8rem;
  margin-bottom: 2rem;
 }
-.para {
- color: #444;
- font-size: 1.6rem;
+.p-foot {
+ color: #b2b2b2;
+ font-size: 1.4rem;
+ margin-bottom: 2.5rem;
 }
 
 /* h3 */
@@ -67,7 +68,14 @@ h3 {
  padding-top: 5rem;
  font-weight: 500;
 }
-
+.h3-light {
+ font-size: 2.5rem;
+ letter-spacing: 0.1rem;
+ text-transform: capitalize;
+ margin-bottom: 2.5rem;
+ color: #f0f0f0;
+ font-weight: 400;
+}
 h5 {
  font-size: 1.8rem;
  color: #444;
@@ -403,7 +411,7 @@ h5 {
 /*************************************/
 .sec6 {
  width: 100%;
- background-color: #d3d3d3;
+ background-color: #303030;
  text-align: center;
 }
 .brand {
@@ -426,6 +434,94 @@ h5 {
 }
 /********** Section 6 End**********/
 /*************************************/
+
+/********** Section 7 Footer Start**********/
+/*****************************************/
+.foot {
+ width: 100%;
+ background-color: #191919;
+}
+.foot-content {
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-start;
+ margin-bottom: 5rem;
+}
+
+/* shop info  */
+.shop {
+ width: 30%;
+}
+
+.foot-social {
+ display: flex;
+ list-style-type: none;
+}
+.foot-social li {
+ font-size: 1.6rem;
+ margin-right: 3rem;
+ color: #b2b2b2;
+ background-color: #444;
+ padding: 1rem 1.5rem;
+ border-radius: 50%;
+}
+
+/* info and acount */
+.info,
+.account {
+ width: 15%;
+}
+
+.common-ul li {
+ list-style-type: none;
+ margin-bottom: 2.5rem;
+}
+
+/* news */
+.news {
+ width: 30%;
+}
+.foot-form {
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+}
+.foot-form input {
+ width: 70%;
+ padding: 0.6rem 1rem;
+ border: none;
+}
+.foot-form input:focus {
+ border: none;
+ outline: none;
+}
+
+.foot-form-btn {
+ display: inline-block;
+ background-color: red;
+ padding: 0.5rem 1rem;
+ font-size: 1.2rem;
+ color: white;
+ letter-spacing: 0.1rem;
+}
+
+/* copy right */
+.foot-hr {
+ margin-bottom: 2rem;
+}
+.copy-right {
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-start;
+}
+
+.payment-card {
+ font-size: 3.5rem;
+ color: #b2b2b2;
+}
+
+/********** Section 7 Footer End**********/
+/*****************************************/
 
 /********** Media Query For Mobile Start **********/
 /***********************************************/
