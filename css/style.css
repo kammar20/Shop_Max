@@ -1,0 +1,277 @@
+/********** Utility Start **********/
+/**********************************/
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html,
+body {
+ font-size: 62.5%;
+ font-family: "Poppins", sans-serif;
+}
+
+button,
+a {
+ font-family: "Poppins", sans-serif;
+ text-decoration: none;
+}
+
+/* classes */
+
+.container {
+ max-width: 90%;
+ margin: 0 auto;
+ padding: 5% 0;
+}
+
+.red {
+ color: #ff0000;
+}
+
+.purple {
+ color: #680068;
+}
+
+/* h1 */
+h1 {
+ font-size: 5rem;
+ letter-spacing: 0.1rem;
+ text-transform: capitalize;
+ line-height: 5.5rem;
+ margin-bottom: 2rem;
+ font-weight: 600;
+ color: #181818;
+}
+
+/* p-tag */
+p {
+ color: #444;
+ font-size: 1.8rem;
+ margin-bottom: 2rem;
+}
+
+/* h3 */
+h3 {
+ font-size: 3rem;
+ letter-spacing: 0.1rem;
+ text-transform: capitalize;
+ margin-bottom: 2rem;
+ /* font-weight: 600; */
+ color: #181818;
+}
+
+/* btn-style */
+.btn-style {
+ background-color: #cc0000;
+ display: inline-block;
+ color: #fff;
+ padding: 1rem 2rem;
+ font-size: 1.4rem;
+ border-radius: 20rem;
+ transition: all 0.2s ease-in-out;
+}
+
+.btn-style:hover {
+ background-color: #ff0000;
+}
+
+/********** Utility End **********/
+/**********************************/
+
+/********** Header Start **********/
+/**********************************/
+.head {
+ background-image: url("../img/hero.jpg");
+ background-size: cover;
+ width: 100%;
+}
+
+.navbar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 2rem 5%;
+ width: 100%;
+ position: fixed;
+ left: 0;
+ top: 0;
+ z-index: 2;
+ background-color: white;
+}
+
+/* logo */
+.logo a {
+ font-size: 2.2rem;
+ font-weight: 700;
+ letter-spacing: 0.1rem;
+ border: 2px solid purple;
+ padding: 0 0.5rem;
+ position: relative;
+}
+/* ul */
+.nav-menu {
+ display: flex;
+ position: relative;
+}
+
+/* li */
+.nav-list {
+ list-style-type: none;
+ padding-left: 1.5rem;
+ position: relative;
+}
+
+/* a */
+.nav-link {
+ font-size: 1.8rem;
+ color: #444;
+ transition: all 0.2s ease-in-out;
+ position: relative;
+ display: block;
+ padding-left: 3rem;
+}
+
+.nav-link:hover,
+.nav-link.current {
+ color: #ff0000;
+}
+
+/* cart icon */
+.cart-icon {
+ color: #444;
+ font-size: 1.8rem;
+ margin-left: 0.5rem;
+}
+
+/* hamburger */
+.hamburger {
+ display: none;
+}
+
+.bar {
+ display: block;
+ width: 2.4rem;
+ height: 0.3rem;
+ margin-bottom: 0.5rem;
+ background-color: #444;
+ transition: all 0.3s ease-in-out;
+}
+
+/* for sticky navar bar big screen style*/
+.navbar.sticky {
+ padding: 1.5rem 5%;
+ transition: all 0.4s ease-in-out;
+}
+
+/* tagline */
+.tag-line {
+ padding-left: 5%;
+ padding-top: 25rem;
+ padding-bottom: 26rem;
+}
+
+/* arrow icon */
+.arrow-icon {
+ margin-left: 0.5rem;
+ font-size: 1.4rem;
+}
+/********** Header End **********/
+/**********************************/
+
+/********** Section 1 start **********/
+/*************************************/
+.category {
+ display: flex;
+ justify-content: space-between;
+}
+
+.category-common {
+ width: 32%;
+}
+.category-common img {
+ width: 100%;
+}
+/********** Section 1 End **********/
+/*************************************/
+
+/********** Media Query For Mobile Start **********/
+/***********************************************/
+@media only screen and (min-width: 280px) and (max-width: 768px) {
+ /* common class start*/
+ h1 {
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 4rem;
+  font-weight: 600;
+ }
+
+ p {
+  font-size: 1.6rem;
+ }
+
+ /* common class start*/
+
+ /***** header Start *****/
+ .head {
+  background-position: center right 50%;
+ }
+
+ .nav-menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  background-color: #e9e9e9;
+  flex-direction: column;
+  width: 100%;
+ }
+
+ .nav-list {
+  margin: 2rem auto;
+ }
+
+ .nav-list,
+ .nav-link {
+  padding-left: 0;
+ }
+
+ .hamburger {
+  display: block;
+ }
+
+ /* when we click on hamburger */
+ .navbar.active {
+  background-color: #e9e9e9;
+ }
+
+ .nav-menu.active {
+  top: 6rem;
+ }
+
+ /* hamburger transform */
+ .hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(-45deg);
+ }
+ .hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+ }
+ .hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(45deg);
+ }
+
+ /* hamburger color */
+ .hamburger.active .bar {
+  background-color: #444;
+ }
+
+ /* tagline */
+ .tag-line {
+  padding-bottom: 20rem;
+ }
+
+ /***** header End *****/
+}
+/********** Media Query For Mobile End **********/
+/***********************************************/
