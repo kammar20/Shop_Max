@@ -19,8 +19,21 @@ a {
  text-decoration: none;
 }
 
-/* classes */
+:root {
+ --whiteColor: #ffffff;
+ --offWhite: #f0f0f0;
+ --darkGray: #181818;
+ --grayColor: #444444;
+ --lightGray: #b2b2b2;
+ --purple: #680068;
+ --redColor: #ff0000;
+ --btnColor: #cc0000;
+ --starColor: #ff4500;
+ --brandBg: #303030;
+ --footBg: #191919;
+}
 
+/* common classes */
 .container {
  max-width: 90%;
  margin: 0 auto;
@@ -28,11 +41,11 @@ a {
 }
 
 .red {
- color: #ff0000;
+ color: var(--redColor);
 }
 
 .purple {
- color: #680068;
+ color: var(--purple);
 }
 
 /* h1 */
@@ -43,17 +56,18 @@ h1 {
  line-height: 5.5rem;
  margin-bottom: 2rem;
  font-weight: 600;
- color: #181818;
+ color: var(--darkGray);
 }
 
 /* p-tag */
 p {
- color: #444;
+ color: var(--grayColor);
  font-size: 1.8rem;
  margin-bottom: 2rem;
 }
+
 .p-foot {
- color: #b2b2b2;
+ color: var(--lightGray);
  font-size: 1.4rem;
  margin-bottom: 2.5rem;
 }
@@ -64,21 +78,32 @@ h3 {
  letter-spacing: 0.1rem;
  text-transform: capitalize;
  margin-bottom: 1rem;
- color: #181818;
+ color: var(--darkGray);
  padding-top: 5rem;
  font-weight: 500;
 }
+
 .h3-light {
  font-size: 2.5rem;
  letter-spacing: 0.1rem;
  text-transform: capitalize;
  margin-bottom: 2.5rem;
- color: #f0f0f0;
+ color: var(--offWhite);
  font-weight: 400;
 }
+
+.small-h3 {
+ font-size: 1.5rem;
+ letter-spacing: 0.1rem;
+ text-transform: capitalize;
+ margin-bottom: 1rem;
+ color: var(--darkGray);
+ font-weight: 600;
+}
+
 h5 {
  font-size: 1.8rem;
- color: #444;
+ color: var(--grayColor);
  margin-bottom: 1rem;
  font-weight: 600;
 }
@@ -86,11 +111,12 @@ h5 {
 .h5-bottom {
  margin-bottom: 4rem;
 }
+
 /* btn-style */
 .btn-style {
- background-color: #cc0000;
+ background-color: var(--btnColor);
  display: inline-block;
- color: #fff;
+ color: var(--whiteColor);
  padding: 1rem 2rem;
  font-size: 1.4rem;
  border-radius: 20rem;
@@ -99,8 +125,8 @@ h5 {
 
 .btn-style:hover {
  background-color: transparent;
- color: #ff0000;
- border: 1px solid #ff0000;
+ color: var(--redColor);
+ border: 1px solid var(--redColor);
 }
 
 /* rating star common */
@@ -110,7 +136,7 @@ h5 {
 }
 
 .checked {
- color: orangered;
+ color: var(--starColor);
 }
 
 /********** Utility End **********/
@@ -134,7 +160,7 @@ h5 {
  left: 0;
  top: 0;
  z-index: 2;
- background-color: white;
+ background-color: var(--whiteColor);
 }
 
 /* logo */
@@ -142,7 +168,7 @@ h5 {
  font-size: 2.2rem;
  font-weight: 700;
  letter-spacing: 0.1rem;
- border: 2px solid purple;
+ border: 2px solid var(--purple);
  padding: 0 0.5rem;
  position: relative;
 }
@@ -162,7 +188,7 @@ h5 {
 /* a */
 .nav-link {
  font-size: 1.8rem;
- color: #444;
+ color: var(--grayColor);
  transition: all 0.2s ease-in-out;
  position: relative;
  display: block;
@@ -171,12 +197,12 @@ h5 {
 
 .nav-link:hover,
 .nav-link.current {
- color: #ff0000;
+ color: var(--redColor);
 }
 
 /* cart icon */
 .cart-icon {
- color: #444;
+ color: var(--grayColor);
  font-size: 1.8rem;
  margin-left: 0.5rem;
 }
@@ -191,7 +217,7 @@ h5 {
  width: 2.4rem;
  height: 0.3rem;
  margin-bottom: 0.5rem;
- background-color: #444;
+ background-color: var(--grayColor);
  transition: all 0.3s ease-in-out;
 }
 
@@ -229,7 +255,7 @@ h5 {
  margin: auto;
  display: block;
  height: 0.4rem;
- background-color: red;
+ background-color: var(--redColor);
 }
 
 .category {
@@ -242,7 +268,6 @@ h5 {
 }
 .category-common img {
  width: 100%;
- opacity: 1;
 }
 /********** Section 1 End **********/
 /*************************************/
@@ -251,7 +276,7 @@ h5 {
 /************************************************/
 .sec2 {
  text-align: center;
- background-color: #f0f0f0;
+ background-color: var(--offWhite);
 }
 
 .sec2 .hr {
@@ -260,7 +285,7 @@ h5 {
  margin: auto;
  display: block;
  height: 0.4rem;
- background-color: red;
+ background-color: var(--redColor);
 }
 
 .popular {
@@ -293,7 +318,7 @@ h5 {
  margin: auto;
  display: block;
  height: 0.4rem;
- background-color: red;
+ background-color: var(--redColor);
 }
 
 .latest {
@@ -314,8 +339,8 @@ h5 {
 /********** Section 3 End **********/
 /*************************************/
 
-/********** Section 4 Start **********/
-/*************************************/
+/********** Section 4 Start Deal of the Week**********/
+/*****************************************************/
 .sec4 {
  width: 100%;
  background-image: linear-gradient(to right, #dd5e89, #f7bb97);
@@ -327,7 +352,7 @@ h5 {
  margin: 0 auto 2rem;
  display: block;
  height: 0.4rem;
- background-color: #ff0000;
+ background-color: var(--redColor);
 }
 .deal {
  display: flex;
@@ -345,7 +370,7 @@ h5 {
 #timer {
  font-size: 3rem;
  font-weight: 500;
- color: red;
+ color: var(--redColor);
  padding: 1rem;
  margin-bottom: 2rem;
 }
@@ -354,13 +379,13 @@ h5 {
  display: inline-block;
  min-width: 8rem;
  padding: 1rem;
- background: #fff;
+ background: var(--whiteColor);
  border-radius: 1rem;
  margin: 1.5rem;
 }
 
 #timer div span {
- color: red;
+ color: var(--redColor);
  display: block;
  font-size: 1rem;
  font-weight: 600;
@@ -370,8 +395,8 @@ h5 {
 /********** Section 4 End **********/
 /*************************************/
 
-/********** Section 5 Start **********/
-/*************************************/
+/********** Section 5 Start testimony**********/
+/**********************************************/
 .sec5 {
  text-align: center;
  width: 100%;
@@ -382,7 +407,7 @@ h5 {
  margin: 0 auto 2rem;
  display: block;
  height: 0.4rem;
- background-color: #ff0000;
+ background-color: var(--redColor);
 }
 .testimony {
  display: flex;
@@ -392,13 +417,13 @@ h5 {
 }
 .test-common {
  width: 23%;
- background-color: #f0f0f0;
+ background-color: var(--offWhite);
  padding: 2rem;
  border-radius: 2rem;
 }
 .quote-icon {
  font-size: 2.5rem;
- color: orangered;
+ color: var(--starColor);
  margin-bottom: 2rem;
 }
 .test-common img {
@@ -407,11 +432,11 @@ h5 {
 /********** Section 5 End **********/
 /*************************************/
 
-/********** Section 6 Start**********/
-/*************************************/
+/********** Section 6 Start Brand**********/
+/*****************************************/
 .sec6 {
  width: 100%;
- background-color: #303030;
+ background-color: var(--brandBg);
  text-align: center;
 }
 .brand {
@@ -439,7 +464,7 @@ h5 {
 /*****************************************/
 .foot {
  width: 100%;
- background-color: #191919;
+ background-color: var(--footBg);
 }
 .foot-content {
  display: flex;
@@ -456,12 +481,13 @@ h5 {
 .foot-social {
  display: flex;
  list-style-type: none;
+ cursor: pointer;
 }
 .foot-social li {
  font-size: 1.6rem;
  margin-right: 3rem;
- color: #b2b2b2;
- background-color: #444;
+ color: var(--lightGray);
+ background-color: var(--grayColor);
  padding: 1rem 1.5rem;
  border-radius: 50%;
 }
@@ -473,6 +499,7 @@ h5 {
 }
 
 .common-ul li {
+ cursor: pointer;
  list-style-type: none;
  margin-bottom: 2.5rem;
 }
@@ -498,10 +525,10 @@ h5 {
 
 .foot-form-btn {
  display: inline-block;
- background-color: red;
+ background-color: var(--redColor);
  padding: 0.5rem 1rem;
  font-size: 1.2rem;
- color: white;
+ color: var(--whiteColor);
  letter-spacing: 0.1rem;
 }
 
@@ -517,14 +544,14 @@ h5 {
 
 .payment-card {
  font-size: 3.5rem;
- color: #b2b2b2;
+ color: var(--lightGray);
 }
 
 /********** Section 7 Footer End**********/
 /*****************************************/
 
 /********** Media Query For Mobile Start **********/
-/***********************************************/
+/**************************************************/
 @media only screen and (min-width: 280px) and (max-width: 768px) {
  /* common class start*/
  h1 {
@@ -538,7 +565,33 @@ h5 {
   font-size: 1.6rem;
  }
 
- /* common class start*/
+ .p-foot {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+ }
+
+ h3 {
+  padding-top: 2.5rem;
+ }
+
+ .h3-light {
+  margin-bottom: 1.5rem;
+ }
+
+ h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+ }
+
+ .btn-style {
+  margin-bottom: 2rem;
+ }
+
+ .star-icon {
+  font-size: 1rem;
+ }
+
+ /* common class End*/
 
  /***** header Start *****/
  .head {
@@ -549,7 +602,7 @@ h5 {
   position: fixed;
   top: -100%;
   left: 0;
-  background-color: #f0f0f0;
+  background-color: var(--offWhite);
   flex-direction: column;
   width: 100%;
  }
@@ -569,7 +622,7 @@ h5 {
 
  /* when we click on hamburger */
  .navbar.active {
-  background-color: #f0f0f0;
+  background-color: var(--offWhite);
  }
 
  .nav-menu.active {
@@ -589,7 +642,7 @@ h5 {
 
  /* hamburger color */
  .hamburger.active .bar {
-  background-color: #444;
+  background-color: var(--grayColor);
  }
 
  /* tagline */
@@ -598,6 +651,170 @@ h5 {
  }
 
  /***** header End *****/
+
+ /***** Section 1 Start Category*****/
+ .sec1 .hr {
+  width: 30%;
+  margin-bottom: 2rem;
+ }
+ .category {
+  flex-flow: column nowrap;
+ }
+ .category-common {
+  width: 100%;
+ }
+ .category-common img {
+  width: 100%;
+  margin-bottom: 2rem;
+ }
+
+ /***** Section 1 End  ******/
+
+ /***** Section 2 Start best seller Start******/
+ .sec2 .hr {
+  width: 25%;
+ }
+
+ .popular {
+  flex-flow: column nowrap;
+ }
+
+ .popular-common {
+  width: 100%;
+ }
+
+ .popular-common img {
+  width: 100%;
+  margin-top: 2rem;
+ }
+ /******* Section 2 End  *********/
+
+ /******* Section 3 New Arrivals Start *********/
+ .sec3 .hr {
+  width: 20%;
+ }
+
+ .latest {
+  flex-flow: column nowrap;
+ }
+
+ .latest-common {
+  width: 100%;
+ }
+
+ .latest-common img {
+  width: 100%;
+ }
+ /******* Section 3 End  *********/
+
+ /******* Section 4 Deal of the Week  *********/
+ .sec4 .hr {
+  width: 30%;
+ }
+ .deal {
+  flex-flow: column nowrap;
+ }
+ .deal-common {
+  width: 100%;
+ }
+
+ .deal-text {
+  order: 2;
+ }
+
+ .deal-img {
+  order: 1;
+ }
+ .deal-common img {
+  width: 100%;
+ }
+
+ /* timer */
+ #timer {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+ }
+
+ #timer div {
+  padding: 0.8rem 1rem;
+  margin: 0 0.5rem;
+  color: var(--btnColor);
+  min-width: 6rem;
+ }
+
+ #timer div span {
+  color: var(--starColor);
+ }
+ /******* Section 4 End  *********/
+
+ /******* Section 5 Start Testimony  *********/
+ .sec5 .hr {
+  width: 30%;
+ }
+
+ .testimony {
+  flex-flow: column nowrap;
+ }
+ .test-common {
+  width: 100%;
+  margin-bottom: 2rem;
+ }
+ .quote-icon {
+  font-size: 2.5rem;
+  color: var(--starColor);
+  margin-bottom: 2rem;
+ }
+
+ /******* Section 5 End  *********/
+
+ /******* Section 6 Brand Start *********/
+ .brand {
+  flex-flow: column nowrap;
+ }
+
+ .brand-common {
+  width: 100%;
+ }
+
+ .brand-common img {
+  width: 30%;
+  margin: 2rem 0;
+ }
+ /******* Section 6 End  *********/
+
+ /******* Section 7 Footer Start  *********/
+ .foot-content {
+  flex-flow: column nowrap;
+ }
+
+ .shop,
+ .info,
+ .account,
+ .news {
+  width: 100%;
+ }
+
+ .foot-social li {
+  font-size: 1.4rem;
+  margin-right: 2rem;
+ }
+ .common-ul li {
+  margin-bottom: 1.5rem;
+ }
+
+ /* copyright */
+ .copy-right {
+  text-align: center;
+  flex-flow: column nowrap;
+ }
+
+ .payment-card {
+  font-size: 3rem;
+ }
+ /******* Section 7 Footer End  *********/
 }
 /********** Media Query For Mobile End **********/
 /***********************************************/
