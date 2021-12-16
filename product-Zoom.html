@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPMAX | E-Commerce</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/08ddf1da77.js" crossorigin="anonymous"></script>
+    <!-- css style-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!--------header start-------->
+    <!---------------------------->
+    <header class="head">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><span class="red">SHOP</span>
+                    <sapn class="purple">MAX</sapn>
+                </a>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-list"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-list"><a href="products.html" class="nav-link ">Product</a></li>
+                <li class="nav-list"><a href="#" class="nav-link current">About</a></li>
+                <li class="nav-list"><a href="account.html" class="nav-link">Account</a></li>
+                <li class="nav-list"><a href="cart.html" class="nav-link">Cart<i
+                            class="fas fa-shopping-bag cart-icon"></i></a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!---------header End--------->
+    <!---------------------------->
+
+
+    <!---------Zoom Product Section Start--------->
+    <!------------------------------------------->
+    <div class="page-container">
+        <main class="gallery">
+
+            <div class="left-gallery gallery-common">
+
+                <div class="mySlides">
+                    <img src="./img/gallery-1.jpg">
+                </div>
+
+                <div class=" mySlides">
+                    <img src="./img/gallery-2.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./img/gallery-3.jpg">
+                </div>
+
+                <div class="mySlides">
+                    <img src="./img/gallery-4.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <!-- small img -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="./img/gallery-1.jpg" style="width:100%" onclick="currentSlide(1)"
+                            alt="The Woods">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="./img/gallery-2.jpg" style="width:100%" onclick="currentSlide(2)"
+                            alt="Cinque Terre">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="./img/gallery-3.jpg" style="width:100%" onclick="currentSlide(3)"
+                            alt="Mountains and fjords">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo cursor" src="./img/gallery-4.jpg" style="width:100%" onclick="currentSlide(4)"
+                            alt="Northern Lights">
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-text gallery-common">
+                <h3>Red Printed T-Shirt By HRX</h3>
+                <h5>$20.7</h5>
+                <select class="size-select" name="" id="">
+                    <option>Select Size</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>l</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+                <input class="quantity" type="number" name="" id="" placeholder="1" min="1">
+                <a class="btn-style add-btn" href="cart.html">Add To Cart</a>
+                <h5>Product Details</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, corporis?Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Repudiandae laboriosam modi quas nam possimus perferendis!</p>
+            </div>
+
+        </main>
+    </div>
+
+    <!---------Zoom Product Section End----------->
+    <!------------------------------------------->
+
+
+    <!---------Section 6 Start----------->
+    <!----------------------------------->
+    <section class="sec6">
+        <div class="container">
+            <main class="brand">
+                <div class="brand1 brand-common">
+                    <img src="./img/brand1.png" alt="">
+                </div>
+                <div class="brand2 brand-common">
+                    <img src="./img/brand2.png" alt="">
+                </div>
+                <div class="brand3 brand-common">
+                    <img src="./img/brand3.png" alt="">
+                </div>
+
+                <div class="brand5 brand-common">
+                    <img src="./img/brand5.png" alt="">
+                </div>
+                <div class="brand6 brand-common">
+                    <img src="./img/brand6.png" alt="">
+                </div>
+            </main>
+        </div>
+    </section>
+    <!---------Section 6 End----------->
+    <!--------------------------------->
+
+
+    <!---------Section 7 Footer Start----------->
+    <!---------------------------------------->
+    <footer class="foot">
+        <div class="container">
+            <main class="foot-content">
+                <div class="shop foot-common">
+                    <h3 class="h3-light"><span class="red">SHOP</span> <span class="purple">MAX</span></h3>
+                    <p class="p-foot">Address : 60-49 Road 11378 New York</p>
+                    <p class="p-foot">Phone : +65 11.188.888</p>
+                    <p class="p-foot">Email : hello.colorlib@gmail.com</p>
+                    <ul class="foot-social">
+                        <li><i class="fab fa-facebook-f social-icon"></i></li>
+                        <li><i class="fab fa-instagram social-icon"></i></li>
+                        <li><i class="fab fa-twitter social-icon"></i></li>
+                        <li><i class="fab fa-pinterest social-icon"></i></li>
+                    </ul>
+                </div>
+
+                <div class="info foot-common">
+                    <h3 class="h3-light">Information</h3>
+                    <ul class="information common-ul">
+                        <li class="p-foot">About Us</li>
+                        <li class="p-foot">Checkout</li>
+                        <li class="p-foot">Contact</li>
+                        <li class="p-foot">Service</li>
+                    </ul>
+                </div>
+
+                <div class="account foot-common">
+                    <h3 class="h3-light">Account</h3>
+                    <ul class="my-account common-ul">
+                        <li class="p-foot">My Account</li>
+                        <li class="p-foot">Contact</li>
+                        <li class="p-foot">Shopping Cart</li>
+                        <li class="p-foot">Shop</li>
+                    </ul>
+                </div>
+
+                <div class="news foot-common">
+                    <h3 class="h3-light">Join Our Newsletter Now</h3>
+                    <p class="p-foot">Get E-mail updates about our latest shop and special offers.</p>
+                    <form action="" class="foot-form">
+                        <input type="email" name="email" id="email" placeholder="Enter Your E-Mail">
+                        <a href="#" class="foot-form-btn">SUBSCRIBE</a>
+                    </form>
+                </div>
+            </main>
+
+
+
+            <hr class="foot-hr">
+            <div class="copy-right">
+                <p class="p-foot">Copyright &copy; 2021 All rights reserved | This template is made by Ammar Khan</p>
+                <div class="payment-card">
+                    <i class="fab fa-cc-mastercard pay-icon"></i>
+                    <i class="fab fa-cc-visa pay-icon"></i>
+                    <i class="fab fa-cc-paypal pay-icon"></i>
+                    <i class="fab fa-cc-amex pay-icon"></i>
+                    <i class="fab fa-cc-apple-pay pay-icon"></i>
+                    <i class="fab fa-cc-amazon-pay pay-icon"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!---------Section 7 Footer End----------->
+    <!---------------------------------------->
+
+
+
+
+
+    <!-- main js -->
+    <script src="./app.js"></script>
+</body>
+
+
+</html>

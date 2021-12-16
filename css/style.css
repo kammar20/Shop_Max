@@ -44,7 +44,7 @@ option {
 .page-container {
  max-width: 90%;
  margin: 0 auto;
- padding: 5% 0;
+ padding: 8% 0;
 }
 
 .red {
@@ -503,8 +503,6 @@ h5 {
  filter: brightness(100%);
  transform: scale(1.3);
 }
-/********** Section 6 End**********/
-/*************************************/
 
 /********** Section 7 Footer Start**********/
 /*****************************************/
@@ -592,6 +590,7 @@ h5 {
  font-size: 3.5rem;
  color: var(--lightGray);
 }
+
 /**********All Product Section Start**********/
 /*********************************************/
 .all-products {
@@ -617,8 +616,130 @@ select:focus {
  outline: none;
 }
 
-/********** Account Section Contact form Start**********/
-/*****************************************************/
+/********** Image Gallery Section Start**********/
+/******************************************************/
+.gallery {
+ display: flex;
+ justify-content: space-between;
+ align-self: flex-start;
+}
+
+img {
+ vertical-align: middle;
+}
+
+/* left side img style */
+/* position relative for arrow */
+.left-gallery {
+ position: relative;
+ width: 30%;
+ margin: 0 auto;
+ border: 0.1rem solid var(--darkGray);
+}
+
+/* Hide the images by default */
+.mySlides {
+ width: 100%;
+ border-bottom: 0.1rem solid var(--lightGray);
+}
+
+.mySlides img {
+ width: 100%;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+ cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+ cursor: pointer;
+ position: absolute;
+ top: 40%;
+ width: auto;
+ padding: 1.6rem;
+ margin-top: -5rem;
+ color: var(--darkGray);
+ font-weight: bold;
+ font-size: 2rem;
+ border-radius: 0 3px 3px 0;
+ user-select: none;
+ -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+ right: 0;
+ border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+ background-color: var(--lightGray);
+}
+
+/* small img */
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+/* Six columns side by side */
+.row {
+ display: flex;
+}
+.column {
+ width: 25%;
+ border-left: 0.1rem solid var(--lightGray);
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+ opacity: 0.5;
+}
+
+.active,
+.demo:hover {
+ opacity: 1;
+}
+
+/* right side text style */
+.right-text {
+ width: 60%;
+}
+
+/* for product detail name */
+.right-text h3 {
+ padding-top: 0;
+}
+
+/* size */
+.size-select {
+ padding: 0.5rem 0;
+ margin-bottom: 2rem;
+}
+
+/* number */
+.quantity {
+ display: block;
+ width: 5%;
+ border: 1px solid var(--darkGray);
+ margin-bottom: 2rem;
+}
+
+/* add to cart button */
+.add-btn {
+ margin-bottom: 2rem;
+}
+
+/* for product detail para */
+.right-text p {
+ max-width: 60%;
+}
 
 /********** Media Query For Mobile Start **********/
 /**************************************************/
@@ -630,6 +751,7 @@ select:focus {
   margin: 0 auto;
   padding: 25% 0;
  }
+
  h1 {
   font-size: 3.5rem;
   letter-spacing: 0.1rem;
@@ -666,7 +788,6 @@ select:focus {
  .star-icon {
   font-size: 1rem;
  }
-
  /* common class End*/
 
  /***** header Start *****/
@@ -759,7 +880,6 @@ select:focus {
   width: 100%;
   margin-top: 2rem;
  }
- /******* Section 2 End  *********/
 
  /******* Section 3 New Arrivals Start *********/
  .sec3 .hr {
@@ -777,7 +897,6 @@ select:focus {
  .latest-common img {
   width: 100%;
  }
- /******* Section 3 End  *********/
 
  /******* Section 4 Deal of the Week  *********/
  .sec4 .hr {
@@ -820,7 +939,6 @@ select:focus {
  #timer div span {
   color: var(--starColor);
  }
- /******* Section 4 End  *********/
 
  /******* Section 5 Start Testimony  *********/
  .sec5 .hr {
@@ -840,8 +958,6 @@ select:focus {
   margin-bottom: 2rem;
  }
 
- /******* Section 5 End  *********/
-
  /******* Section 6 Brand Start *********/
  .brand {
   flex-flow: column nowrap;
@@ -855,7 +971,6 @@ select:focus {
   width: 30%;
   margin: 2rem 0;
  }
- /******* Section 6 End  *********/
 
  /******* Section 7 Footer Start  *********/
  .foot-content {
@@ -886,7 +1001,6 @@ select:focus {
  .payment-card {
   font-size: 3rem;
  }
- /******* Section 7 Footer End  *********/
 
  /**********All Product Section Start**********/
  .product-top-head h3 {
@@ -900,6 +1014,37 @@ select:focus {
 
  .hr-allproduct {
   margin-bottom: 4rem;
+ }
+
+ /********** Image (product) Gallery Section Start**********/
+ .gallery {
+  flex-flow: column nowrap;
+ }
+
+ /* left img */
+ .left-gallery {
+  width: 100%;
+  margin: 5rem auto 2rem;
+ }
+
+ .prev,
+ .next {
+  top: 50%;
+  padding: 1rem;
+  font-size: 1.8rem;
+ }
+
+ /* right text */
+ .right-text {
+  width: 100%;
+ }
+
+ .right-text h3 {
+  font-size: 2rem;
+ }
+
+ .right-text p {
+  max-width: 100%;
  }
 }
 /********** Media Query For Mobile End **********/
