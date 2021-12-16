@@ -14,7 +14,9 @@ body {
 }
 
 button,
-a {
+a,
+select,
+option {
  font-family: "Poppins", sans-serif;
  text-decoration: none;
 }
@@ -35,6 +37,11 @@ a {
 
 /* common classes */
 .container {
+ max-width: 90%;
+ margin: 0 auto;
+ padding: 5% 0;
+}
+.page-container {
  max-width: 90%;
  margin: 0 auto;
  padding: 5% 0;
@@ -585,14 +592,44 @@ h5 {
  font-size: 3.5rem;
  color: var(--lightGray);
 }
+/**********All Product Section Start**********/
+/*********************************************/
+.all-products {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
 
-/********** Section 7 Footer End**********/
-/*****************************************/
+.hr-allproduct {
+ display: block;
+ width: 40%;
+ margin: -0.8rem 0 5rem;
+ height: 0.4rem;
+ background-color: var(--redColor);
+}
+
+select {
+ background-color: var(--lightGray);
+ padding: 0.8rem 2rem;
+}
+select:focus {
+ border: none;
+ outline: none;
+}
+
+/********** Account Section Contact form Start**********/
+/*****************************************************/
 
 /********** Media Query For Mobile Start **********/
 /**************************************************/
 @media only screen and (min-width: 280px) and (max-width: 768px) {
  /* common class start*/
+
+ .page-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 25% 0;
+ }
  h1 {
   font-size: 3.5rem;
   letter-spacing: 0.1rem;
@@ -689,8 +726,6 @@ h5 {
   padding-bottom: 20rem;
  }
 
- /***** header End *****/
-
  /***** Section 1 Start Category*****/
  .sec1 .hr {
   width: 30%;
@@ -706,8 +741,6 @@ h5 {
   width: 100%;
   margin-bottom: 2rem;
  }
-
- /***** Section 1 End  ******/
 
  /***** Section 2 Start best seller Start******/
  .sec2 .hr {
@@ -854,6 +887,20 @@ h5 {
   font-size: 3rem;
  }
  /******* Section 7 Footer End  *********/
+
+ /**********All Product Section Start**********/
+ .product-top-head h3 {
+  font-size: 2rem;
+  font-weight: 600;
+ }
+
+ select {
+  padding: 0.8rem 0;
+ }
+
+ .hr-allproduct {
+  margin-bottom: 4rem;
+ }
 }
 /********** Media Query For Mobile End **********/
 /***********************************************/

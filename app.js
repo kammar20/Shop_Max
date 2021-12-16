@@ -26,8 +26,6 @@ function stickyNav() {
 }
 
 // timer
-
-// final js code
 function updateTimer() {
  future = Date.parse("jun 12, 2022 01:30:00");
  now = new Date();
@@ -58,3 +56,5 @@ function updateTimer() {
   "<span>Seconds</span></div>";
 }
 setInterval("updateTimer()", 1000);
+
+// filter search
