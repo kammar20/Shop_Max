@@ -721,11 +721,12 @@ select:focus {
  margin-right: 2rem;
 }
 
-.top-current:hover {
- text-decoration: underline;
+.top-current:hover,
+.top-notation .top-current-active {
  color: var(--redColor);
 }
 
+/* main container */
 .gallery {
  display: flex;
  justify-content: space-between;
@@ -801,6 +802,7 @@ img {
 .row {
  display: flex;
 }
+
 .column {
  width: 25%;
  border-left: 0.1rem solid var(--lightGray);
@@ -1280,6 +1282,16 @@ img {
 
  /************Img Slide Show Section Start img gallery (M)**********/
  /* page navigation */
+ .top-notation {
+  margin-bottom: 0rem;
+ }
+
+ .top-span {
+  font-size: 1.5rem;
+  margin-right: 0.9rem;
+ }
+
+ /* main container */
  .gallery {
   flex-flow: column nowrap;
  }
