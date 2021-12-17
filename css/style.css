@@ -45,7 +45,7 @@ option {
 .page-container {
  max-width: 90%;
  margin: 0 auto;
- padding: 8% 0;
+ padding: 10% 0;
 }
 
 /* red class */
@@ -945,12 +945,12 @@ img {
 
 /********** Media Query For Mobile Start **********/
 /**************************************************/
-@media only screen and (min-width: 280px) and (max-width: 768px) {
+@media only screen and (min-width: 280px) and (max-width: 767px) {
  /* common class start (M)*/
  .page-container {
   max-width: 90%;
   margin: 0 auto;
-  padding: 30% 0;
+  padding: 30% 0 15%;
  }
 
  h1 {
