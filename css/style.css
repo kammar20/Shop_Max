@@ -41,6 +41,7 @@ option {
  margin: 0 auto;
  padding: 5% 0;
 }
+
 .page-container {
  max-width: 90%;
  margin: 0 auto;
@@ -272,17 +273,18 @@ h5 {
 
 .category-common {
  width: 32%;
+ position: relative;
 }
 .category-common img {
  width: 100%;
 }
 
 /* for Overlay */
-.her,
+/* .her,
 .him,
 .extra {
  position: relative;
-}
+} */
 
 .overlay {
  font-size: 3rem;
@@ -297,9 +299,7 @@ h5 {
  transition: all 0.3s ease-in-out;
 }
 
-.her:hover .overlay,
-.him:hover .overlay,
-.extra:hover .overlay {
+.category-common:hover .overlay {
  opacity: 1;
 }
 
@@ -332,6 +332,7 @@ h5 {
  width: 24%;
  transition: all 0.4s ease-in-out;
  cursor: pointer;
+ position: relative;
 }
 .popular-common:hover {
  transform: translateY(-2rem);
@@ -341,6 +342,15 @@ h5 {
  width: 100%;
 }
 
+/* quick view */
+.quick-view {
+ font-size: 1.2rem;
+ text-align: center;
+ padding: 1rem;
+ position: absolute;
+ top: 50;
+ left: 20;
+}
 /********** Section 2 End **********/
 /*************************************/
 
