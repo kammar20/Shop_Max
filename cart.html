@@ -55,10 +55,83 @@
     <!---------------------------->
 
 
-    <!---------Contact Form Start--------->
+    <!---------Cart Page Start--------->
     <!---------------------------------->
+    <div class="page-container">
+        <main class="cart">
 
-    <!---------Contact Form End--------->
+            <!-- cart product -->
+            <div class="cart-product cart-common">
+                <div class="product-heading">
+                    <h5>Product</h5>
+                    <h5>Price</h5>
+                    <h5>Quantity</h5>
+                    <h5>Total</h5>
+                </div>
+                <div class="product1 cart-product-common">
+                    <div class="product-img">
+                        <a href="product-Zoom.html"> <img src="./img/cart1.jpg" alt=""></a>
+                        <p>Men Shirt</p>
+                    </div>
+                    <h5>$20.2</h5>
+                    <input class="quantity-cart" type="number" name="" id="" placeholder="1" min="1">
+                    <h5>$20.2</h5>
+                </div>
+
+                <div class="product2 cart-product-common">
+                    <div class="product-img">
+                        <a href="product-Zoom.html"> <img src="./img/cart2.jpg" alt=""></a>
+                        <p>Sport Shoe</p>
+                    </div>
+                    <h5>$40.6</h5>
+                    <input class="quantity-cart" type="number" name="" id="" placeholder="1" min="1">
+                    <h5>$40.6</h5>
+                </div>
+
+                <div class="coupon">
+                    <input type="text" class="btn-cart" placeholder="Coupon Code">
+                    <p class="btn-cart">APPLY COUPON</p>
+                    <p class="btn-cart">UPDATE CART</p>
+                </div>
+            </div>
+
+            <!-- cart total section -->
+            <div class="cart-total cart-common">
+                <h3>Cart Total</h3>
+                <div class="sub-total">
+                    <h5>Subtotal :</h5>
+                    <p>$60.80</p>
+                </div>
+                <div class="shipping">
+                    <h5>Shipping :</h5>
+                    <div class="shipping-details">
+                        <p>There are no shipping methods available. Please double check your address, or contact us if
+                            you need any help.</p>
+
+                        <select class="country">
+                            <option>Select Country</option>
+                            <option>INDIA</option>
+                            <option>USA</option>
+                            <option>UK</option>
+                        </select>
+                        <input type="text" class="state-country cart-input-common" placeholder="State / Country">
+
+
+                        <input type="text" class="Zip-Code cart-input-common" placeholder="Zip-Code">
+
+                        <a href="#" class="btn-cart update-total">UPDATE TOTALS</a>
+
+                    </div>
+                </div>
+                <div class="total">
+                    <h5>Total :</h5>
+                    <p>$65.00 / incl. Tax</p>
+                </div>
+                <a href="" class="btn-cart checkout">PROCEED TO CHECKOUT</a>
+            </div>
+        </main>
+    </div>
+    <!---------Cart Page End--------->
     <!---------------------------------->
 
 

@@ -143,7 +143,7 @@ h5 {
 /* btn-style for quick view*/
 .btn-quick {
  background-color: var(--whiteColor);
- display: inline-block;
+ /* display: inline-block; */
  color: var(--darkGray);
  padding: 1rem 2rem;
  font-size: 1.5rem;
@@ -155,6 +155,25 @@ h5 {
 .btn-quick:hover {
  background-color: var(--grayColor);
  color: var(--offWhite);
+}
+
+/* btn-style for cart*/
+.btn-cart {
+ background-color: var(--offWhite);
+ display: block;
+ color: var(--darkGray);
+ padding: 1rem 2rem;
+ font-size: 1.4rem;
+ border-radius: 20rem;
+ transition: all 0.3s ease-in-out;
+ font-weight: 500;
+ border: 1px solid var(--offWhite);
+ cursor: pointer;
+}
+
+.btn-cart:hover {
+ background-color: var(--whiteColor);
+ border: 1px solid var(--darkGray);
 }
 
 /* quick view common for all img*/
@@ -782,14 +801,156 @@ img {
  max-width: 60%;
 }
 
+/**********Cart Page Start************/
+/*************************************/
+
+/* main container */
+.cart {
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-start;
+}
+
+/* cart common for both left and right*/
+.cart-common {
+ border: 1px solid var(--lightGray);
+ padding: 3rem;
+}
+
+/*product section left side*/
+.cart-product {
+ width: 60%;
+}
+
+/* product heading  */
+.product-heading {
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 3rem;
+ border-bottom: 1px solid var(--lightGray);
+}
+
+/* cart product deatails*/
+.cart-product-common {
+ display: flex;
+ justify-content: space-between;
+ border-bottom: 1px solid var(--lightGray);
+ margin-bottom: 3rem;
+}
+
+.cart-product-common img {
+ margin-bottom: 1rem;
+}
+
+/* quantity input number tag */
+.cart-product-common .quantity-cart {
+ width: 8%;
+ height: 10%;
+ border: 1px solid var(--grayColor);
+}
+
+.cart-product-common .quantity-cart:focus {
+ outline: none;
+ border: 1px solid var(--grayColor);
+}
+
+/* product section coupon */
+.coupon {
+ display: flex;
+ justify-content: space-between;
+}
+.coupon input {
+ padding: 0rem 0.8rem;
+ border: 1px solid var(--offWhite);
+ height: 100%;
+ padding: 1rem 2rem;
+}
+
+/*total section right side*/
+.cart-total {
+ width: 35%;
+}
+
+/* top h3  */
+.cart-total h3 {
+ padding-top: 0rem;
+}
+
+/* all h5 in cart total */
+.cart-total h5 {
+ margin-right: 2rem;
+ margin-bottom: 3rem;
+}
+
+/* sub total */
+.sub-total {
+ display: flex;
+}
+
+/* shipping */
+.shipping {
+ display: flex;
+}
+
+/* shiping details right side */
+.shipping-details {
+ width: 60%;
+}
+
+.shipping-details p {
+ font-size: 1.6rem;
+}
+
+/* for select a country */
+.shipping-details .country {
+ background-color: var(--offWhite);
+ margin-bottom: 2rem;
+}
+
+/* for state/ country and zip-code */
+.cart-input-common {
+ padding: 1rem;
+ margin-bottom: 2rem;
+ background-color: var(--offWhite);
+ border: 1px solid var(--offWhite);
+ border-radius: 2rem;
+}
+
+.cart-input-common:focus {
+ border: 1px solid var(--grayColor);
+ outline: none;
+}
+
+/* for margin bottom */
+.update-total {
+ text-align: center;
+ margin-bottom: 5rem;
+}
+
+/* total */
+.total {
+ display: flex;
+}
+
+/* checkout */
+.checkout {
+ text-align: center;
+}
+
+.checkout:hover {
+ background-color: var(--grayColor);
+ color: var(--offWhite);
+ border: none;
+}
+
 /********** Media Query For Mobile Start **********/
 /**************************************************/
 @media only screen and (min-width: 280px) and (max-width: 768px) {
- /* common class start*/
+ /* common class start (M)*/
  .page-container {
   max-width: 90%;
   margin: 0 auto;
-  padding: 25% 0;
+  padding: 30% 0;
  }
 
  h1 {
@@ -828,9 +989,8 @@ img {
  .star-icon {
   font-size: 1rem;
  }
- /* common class End*/
 
- /********* header Start *********/
+ /********* header Start (M)*********/
  .head {
   background-position: center right 50%;
  }
@@ -887,7 +1047,7 @@ img {
   padding-bottom: 20rem;
  }
 
- /********* Section 1 Start Category*********/
+ /********* Section 1 Start Category (M)*********/
  .sec1 .hr {
   width: 30%;
   margin-bottom: 2rem;
@@ -903,7 +1063,7 @@ img {
   margin-bottom: 2rem;
  }
 
- /***** Section 2 Start best seller Start******/
+ /***** Section 2 Start best seller Start (M)******/
  .sec2 .hr {
   width: 25%;
  }
@@ -921,7 +1081,7 @@ img {
   margin-top: 2rem;
  }
 
- /******* Section 3 New Arrivals Start *********/
+ /******* Section 3 New Arrivals Start (M)*********/
  .sec3 .hr {
   width: 20%;
  }
@@ -938,7 +1098,7 @@ img {
   width: 100%;
  }
 
- /******* Section 4 Deal of the Week  *********/
+ /******* Section 4 Deal of the Week (M)*********/
  .sec4 .hr {
   width: 30%;
  }
@@ -983,7 +1143,7 @@ img {
   color: var(--starColor);
  }
 
- /******* Section 5 Start Testimony  *********/
+ /******* Section 5 Start Testimony (M)*********/
  .sec5 .hr {
   width: 30%;
  }
@@ -1003,7 +1163,7 @@ img {
   margin-bottom: 2rem;
  }
 
- /******* Section 6 Brand Start *********/
+ /******* Section 6 Brand Start (M)*********/
  .brand {
   flex-flow: column nowrap;
  }
@@ -1017,7 +1177,7 @@ img {
   margin: 2rem 0;
  }
 
- /******* Section 7 Footer Start  *********/
+ /******* Section 7 Footer Start (M)*********/
  .foot-content {
   flex-flow: column nowrap;
  }
@@ -1048,7 +1208,7 @@ img {
   font-size: 3rem;
  }
 
- /**********All Product Section Start Shop Page**********/
+ /**********All Product Section Start Shop Page (M)**********/
  .product-top-head h3 {
   font-size: 2rem;
   font-weight: 600;
@@ -1062,7 +1222,7 @@ img {
   margin-bottom: 4rem;
  }
 
- /************Img Slide Show Section Start img gallery**********/
+ /************Img Slide Show Section Start img gallery (M)**********/
  .gallery {
   flex-flow: column nowrap;
  }
@@ -1095,6 +1255,47 @@ img {
 
  .right-text p {
   max-width: 100%;
+ }
+
+ /************ Cart Page Start (M)**********/
+ /* main container */
+ .cart {
+  flex-flow: column nowrap;
+ }
+
+ .cart-common {
+  padding: 3rem 0.5rem;
+  margin-bottom: 2rem;
+ }
+
+ /* product left side */
+ .cart-product {
+  width: 100%;
+ }
+
+ .cart-product-common .quantity-cart {
+  width: 10%;
+ }
+
+ .coupon {
+  flex-flow: column nowrap;
+ }
+
+ .coupon input {
+  margin-bottom: 2rem;
+ }
+
+ /* total right side */
+ .cart-total {
+  width: 100%;
+ }
+
+ .cart-input-common {
+  width: 90%;
+ }
+
+ .update-total {
+  font-size: 1.2rem;
  }
 }
 /********** Media Query For Mobile End **********/
