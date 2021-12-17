@@ -48,10 +48,12 @@ option {
  padding: 8% 0;
 }
 
+/* red class */
 .red {
  color: var(--redColor);
 }
 
+/* purple class */
 .purple {
  color: var(--purple);
 }
@@ -74,6 +76,7 @@ p {
  margin-bottom: 2rem;
 }
 
+/* para footer */
 .p-foot {
  color: var(--lightGray);
  font-size: 1.4rem;
@@ -186,6 +189,7 @@ h5 {
  width: 100%;
 }
 
+/* navbar */
 .navbar {
  display: flex;
  justify-content: space-between;
@@ -275,8 +279,6 @@ h5 {
  margin-left: 0.5rem;
  font-size: 1.4rem;
 }
-/********** Header End **********/
-/**********************************/
 
 /********** Section 1 category start **********/
 /*********************************************/
@@ -285,6 +287,7 @@ h5 {
  text-align: center;
  padding-top: 5rem;
 }
+
 .sec1 .hr {
  display: block;
  width: 12%;
@@ -299,20 +302,15 @@ h5 {
  justify-content: space-between;
 }
 
+/* position relative for overlay */
 .category-common {
  width: 32%;
  position: relative;
 }
+
 .category-common img {
  width: 100%;
 }
-
-/* for Overlay */
-/* .her,
-.him,
-.extra {
- position: relative;
-} */
 
 .overlay {
  font-size: 3rem;
@@ -330,9 +328,6 @@ h5 {
 .category-common:hover .overlay {
  opacity: 1;
 }
-
-/********** Section 1 End **********/
-/*************************************/
 
 /********** Section 2 Best Seller Start **********/
 /************************************************/
@@ -368,7 +363,7 @@ h5 {
  transform: translateY(-2rem);
 }
 
-/* how showing quick view on hover */
+/*showing quick view on hover */
 .popular-common:hover .quick-view {
  opacity: 1;
 }
@@ -377,14 +372,10 @@ h5 {
  width: 100%;
 }
 
-/********** Section 2 End **********/
-/*************************************/
-
-/********** Section 3 Start **********/
-/*************************************/
+/********** Section 3 Start New Arrival**********/
+/***********************************************/
 .sec3 {
  text-align: center;
- /* background-color: #f0f0f0; */
 }
 
 .sec3 .hr {
@@ -415,7 +406,7 @@ h5 {
  transform: scale(1.05);
 }
 
-/* for quick view */
+/* for quick view on hover*/
 .latest-common:hover .quick-view {
  opacity: 1;
 }
@@ -424,9 +415,6 @@ h5 {
  width: 100%;
 }
 
-/********** Section 3 End **********/
-/*************************************/
-
 /********** Section 4 Start Deal of the Week**********/
 /*****************************************************/
 .sec4 {
@@ -434,6 +422,7 @@ h5 {
  background-image: linear-gradient(to right, #dd5e89, #f7bb97);
  text-align: center;
 }
+
 .sec4 .hr {
  display: block;
  width: 20%;
@@ -442,14 +431,17 @@ h5 {
  height: 0.4rem;
  background-color: var(--redColor);
 }
+
 .deal {
  display: flex;
  justify-content: space-between;
  align-items: center;
 }
+
 .deal-common {
  width: 48%;
 }
+
 .deal-common img {
  width: 100%;
 }
@@ -478,10 +470,6 @@ h5 {
  font-size: 1rem;
  font-weight: 600;
 }
-/* timer */
-
-/********** Section 4 End **********/
-/*************************************/
 
 /********** Section 5 Start testimony**********/
 /**********************************************/
@@ -489,6 +477,7 @@ h5 {
  text-align: center;
  width: 100%;
 }
+
 .sec5 .hr {
  display: block;
  width: 25%;
@@ -497,28 +486,30 @@ h5 {
  height: 0.4rem;
  background-color: var(--redColor);
 }
+
 .testimony {
  display: flex;
  justify-content: space-between;
  align-items: center;
  text-align: center;
 }
+
 .test-common {
  width: 23%;
  background-color: var(--offWhite);
  padding: 2rem;
  border-radius: 2rem;
 }
+
 .quote-icon {
  font-size: 2.5rem;
  color: var(--starColor);
  margin-bottom: 2rem;
 }
+
 .test-common img {
  border-radius: 50%;
 }
-/********** Section 5 End **********/
-/*************************************/
 
 /********** Section 6 Start Brand**********/
 /*****************************************/
@@ -527,6 +518,7 @@ h5 {
  background-color: var(--brandBg);
  text-align: center;
 }
+
 .brand {
  display: flex;
  justify-content: space-between;
@@ -543,6 +535,7 @@ h5 {
  transition: all 0.4s ease-in-out;
  cursor: pointer;
 }
+
 .brand-common img:hover {
  filter: brightness(100%);
  transform: scale(1.3);
@@ -635,8 +628,8 @@ h5 {
  color: var(--lightGray);
 }
 
-/**********All Product Section Start**********/
-/*********************************************/
+/**********All Product Section Shop Page Start**********/
+/*******************************************************/
 .all-products {
  display: flex;
  justify-content: space-between;
@@ -655,13 +648,14 @@ select {
  background-color: var(--lightGray);
  padding: 0.8rem 2rem;
 }
+
 select:focus {
  border: none;
  outline: none;
 }
 
-/********** Image Gallery Section Start**********/
-/******************************************************/
+/**********Img Gallery Slide Show Section Start************/
+/*********************************************************/
 .gallery {
  display: flex;
  justify-content: space-between;
@@ -673,6 +667,7 @@ img {
 }
 
 /* left side img style */
+
 /* position relative for arrow */
 .left-gallery {
  position: relative;
@@ -719,7 +714,7 @@ img {
  border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover background*/
 .prev:hover,
 .next:hover {
  background-color: var(--lightGray);
@@ -752,6 +747,8 @@ img {
 }
 
 /* right side text style */
+
+/* right container*/
 .right-text {
  width: 60%;
 }
@@ -789,7 +786,6 @@ img {
 /**************************************************/
 @media only screen and (min-width: 280px) and (max-width: 768px) {
  /* common class start*/
-
  .page-container {
   max-width: 90%;
   margin: 0 auto;
@@ -834,7 +830,7 @@ img {
  }
  /* common class End*/
 
- /***** header Start *****/
+ /********* header Start *********/
  .head {
   background-position: center right 50%;
  }
@@ -891,7 +887,7 @@ img {
   padding-bottom: 20rem;
  }
 
- /***** Section 1 Start Category*****/
+ /********* Section 1 Start Category*********/
  .sec1 .hr {
   width: 30%;
   margin-bottom: 2rem;
@@ -946,9 +942,11 @@ img {
  .sec4 .hr {
   width: 30%;
  }
+
  .deal {
   flex-flow: column nowrap;
  }
+
  .deal-common {
   width: 100%;
  }
@@ -960,6 +958,7 @@ img {
  .deal-img {
   order: 1;
  }
+
  .deal-common img {
   width: 100%;
  }
@@ -992,10 +991,12 @@ img {
  .testimony {
   flex-flow: column nowrap;
  }
+
  .test-common {
   width: 100%;
   margin-bottom: 2rem;
  }
+
  .quote-icon {
   font-size: 2.5rem;
   color: var(--starColor);
@@ -1032,6 +1033,7 @@ img {
   font-size: 1.4rem;
   margin-right: 2rem;
  }
+
  .common-ul li {
   margin-bottom: 1.5rem;
  }
@@ -1046,7 +1048,7 @@ img {
   font-size: 3rem;
  }
 
- /**********All Product Section Start**********/
+ /**********All Product Section Start Shop Page**********/
  .product-top-head h3 {
   font-size: 2rem;
   font-weight: 600;
@@ -1060,7 +1062,7 @@ img {
   margin-bottom: 4rem;
  }
 
- /********** Image (product) Gallery Section Start**********/
+ /************Img Slide Show Section Start img gallery**********/
  .gallery {
   flex-flow: column nowrap;
  }
@@ -1085,6 +1087,10 @@ img {
 
  .right-text h3 {
   font-size: 2rem;
+ }
+
+ .quantity {
+  width: 12%;
  }
 
  .right-text p {
