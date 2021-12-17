@@ -359,7 +359,7 @@ h5 {
 /* for quick view add position relative */
 .popular-common {
  width: 24%;
- transition: all 0.3s ease-in-out;
+ transition: all 0.4s ease-in-out;
  cursor: pointer;
  position: relative;
 }
