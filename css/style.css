@@ -261,7 +261,7 @@ h5 {
 
 /* cart icon */
 .cart-icon {
- color: var(--grayColor);
+ color: var(--redColor);
  font-size: 1.8rem;
  margin-left: 0.5rem;
 }
@@ -675,6 +675,33 @@ select:focus {
 
 /**********Img Gallery Slide Show Section Start************/
 /*********************************************************/
+
+/* page navigation */
+.top-notation {
+ margin-bottom: 5rem;
+}
+
+.top-notation a {
+ color: var(--darkGray);
+}
+
+.top-icon {
+ font-size: 1.5rem;
+ margin-right: 0.5rem;
+ color: var(--redColor);
+}
+
+.top-span {
+ text-decoration: none;
+ font-size: 1.5rem;
+ margin-right: 2rem;
+}
+
+.top-current:hover {
+ text-decoration: underline;
+ color: var(--redColor);
+}
+
 .gallery {
  display: flex;
  justify-content: space-between;
