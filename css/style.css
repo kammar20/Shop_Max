@@ -673,6 +673,30 @@ select:focus {
  outline: none;
 }
 
+/* pagination */
+.pagination {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 5rem;
+}
+
+.pagination a {
+ color: black;
+ padding: 0.8rem 1.6rem;
+ text-decoration: none;
+ transition: all 0.3s;
+ border: 1px solid var(--grayColor);
+ margin: 0 0.5rem;
+ font-size: 1.5rem;
+}
+
+.pagination .current,
+.pagination a:hover {
+ color: var(--redColor);
+ border-color: var(--redColor);
+}
+
 /**********Img Gallery Slide Show Section Start************/
 /*********************************************************/
 
@@ -1249,7 +1273,13 @@ img {
   margin-bottom: 4rem;
  }
 
+ /* pagination */
+ .pagination {
+  margin: 3rem 0;
+ }
+
  /************Img Slide Show Section Start img gallery (M)**********/
+ /* page navigation */
  .gallery {
   flex-flow: column nowrap;
  }
