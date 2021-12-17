@@ -137,6 +137,34 @@ h5 {
  border: 1px solid var(--redColor);
 }
 
+/* btn-style for quick view*/
+.btn-quick {
+ background-color: var(--whiteColor);
+ display: inline-block;
+ color: var(--darkGray);
+ padding: 1rem 2rem;
+ font-size: 1.5rem;
+ border-radius: 20rem;
+ transition: all 0.3s ease-in-out;
+ font-weight: 600;
+}
+
+.btn-quick:hover {
+ background-color: var(--grayColor);
+ color: var(--offWhite);
+}
+
+/* quick view common for all img*/
+.quick-view {
+ text-align: center;
+ padding: 1rem;
+ position: absolute;
+ top: 60%;
+ width: 100%;
+ opacity: 0;
+ transition: all 0.3s ease-in-out;
+}
+
 /* rating star common */
 .star-icon {
  font-size: 1.4rem;
@@ -328,29 +356,27 @@ h5 {
  text-align: left;
 }
 
+/* for quick view add position relative */
 .popular-common {
  width: 24%;
- transition: all 0.4s ease-in-out;
+ transition: all 0.3s ease-in-out;
  cursor: pointer;
  position: relative;
 }
+
 .popular-common:hover {
  transform: translateY(-2rem);
+}
+
+/* how showing quick view on hover */
+.popular-common:hover .quick-view {
+ opacity: 1;
 }
 
 .popular-common img {
  width: 100%;
 }
 
-/* quick view */
-.quick-view {
- font-size: 1.2rem;
- text-align: center;
- padding: 1rem;
- position: absolute;
- top: 50;
- left: 20;
-}
 /********** Section 2 End **********/
 /*************************************/
 
@@ -377,13 +403,21 @@ h5 {
  flex-flow: row wrap;
 }
 
+/* add position relative for quick view */
 .latest-common {
  width: 24%;
  transition: all 0.4s ease-in-out;
  cursor: pointer;
+ position: relative;
 }
+
 .latest-common:hover {
  transform: scale(1.05);
+}
+
+/* for quick view */
+.latest-common:hover .quick-view {
+ opacity: 1;
 }
 
 .latest-common img {
