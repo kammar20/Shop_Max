@@ -550,13 +550,11 @@ h5 {
 
 .brand-common img {
  width: 30%;
- filter: brightness(0%);
  transition: all 0.4s ease-in-out;
  cursor: pointer;
 }
 
 .brand-common img:hover {
- filter: brightness(100%);
  transform: scale(1.3);
 }
 
