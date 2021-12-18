@@ -860,15 +860,14 @@ img {
 .sec-form {
  background-image: linear-gradient(#de6262, #ffb88c);
  width: 100%;
- height: 100vh;
  display: flex;
- justify-content: space-around;
+ justify-content: space-evenly;
  padding-top: 10rem;
 }
 
 /* img container */
 .img-container {
- width: 35%;
+ width: 30%;
 }
 
 .img-container img {
@@ -937,22 +936,21 @@ img {
 /* bottom text terms and condition */
 .form-wrap .bottom-text {
  font-size: 1.4rem;
- /* margin-top: 2rem; */
  text-align: center;
  color: var(--darkGray);
 }
 
 /* footer p */
-footer p {
+.log p {
  text-align: center;
  margin-top: 10px;
 }
 
 /* login / sign in link*/
-footer a {
+.log a {
  color: var(--redColor);
 }
-footer a:hover {
+.log a:hover {
  color: var(--btnColor);
 }
 
@@ -1426,6 +1424,25 @@ footer a:hover {
 
  .right-text p {
   max-width: 100%;
+ }
+
+ /************ Contact Page Start (M)**********/
+ .sec-form {
+  flex-flow: column nowrap;
+  padding: 10rem 0 0;
+ }
+
+ .img-container {
+  width: 50%;
+  margin: 0 auto;
+ }
+
+ .form-container {
+  width: 100%;
+ }
+
+ .log p {
+  font-size: 1.4rem;
  }
 
  /************ Cart Page Start (M)**********/
