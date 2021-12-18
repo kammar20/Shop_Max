@@ -854,6 +854,108 @@ img {
  max-width: 60%;
 }
 
+/**********Contact Form Start************/
+/*************************************/
+
+.sec-form {
+ background-image: linear-gradient(#de6262, #ffb88c);
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ justify-content: space-around;
+ padding-top: 10rem;
+}
+
+/* img container */
+.img-container {
+ width: 35%;
+}
+
+.img-container img {
+ width: 100%;
+}
+
+/* form container */
+.form-container {
+ width: 30%;
+}
+
+/* top heading */
+.form-wrap h3 {
+ padding-top: 0;
+ text-align: center;
+}
+
+/* white background area */
+.form-wrap {
+ padding: 1rem 2rem;
+ background-color: var(--whiteColor);
+ color: var(--darkGray);
+}
+
+/* group of lable and input  */
+.form-group {
+ margin-bottom: 1.5rem;
+}
+
+/* form lable */
+.form-group label {
+ color: var(--darkGray);
+ font-size: 1.5rem;
+}
+
+/* form input */
+.form-wrap .form-group input {
+ width: 100%;
+ padding: 1rem;
+ border-radius: 0.5rem;
+ border: 1px solid var(--lightGray);
+}
+
+.form-group input:focus {
+ outline: none;
+ border-color: var(--redColor);
+}
+
+/* form button */
+.form-wrap button {
+ display: block;
+ background-color: var(--redColor);
+ width: 100%;
+ color: #fff;
+ padding: 10px;
+ margin: 2rem 0 3rem;
+ cursor: pointer;
+ border: none;
+ transition: all 0.3s ease-in-out;
+}
+
+.form-wrap button:hover {
+ background-color: var(--btnColor);
+}
+
+/* bottom text terms and condition */
+.form-wrap .bottom-text {
+ font-size: 1.4rem;
+ /* margin-top: 2rem; */
+ text-align: center;
+ color: var(--darkGray);
+}
+
+/* footer p */
+footer p {
+ text-align: center;
+ margin-top: 10px;
+}
+
+/* login / sign in link*/
+footer a {
+ color: var(--redColor);
+}
+footer a:hover {
+ color: var(--btnColor);
+}
+
 /**********Cart Page Start************/
 /*************************************/
 
