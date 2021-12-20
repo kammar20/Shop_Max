@@ -640,6 +640,10 @@ h5 {
  justify-content: space-between;
  align-items: flex-start;
 }
+.copy-right p a {
+ color: var(--whiteColor);
+ font-weight: 700;
+}
 
 .payment-card {
  font-size: 3.5rem;
